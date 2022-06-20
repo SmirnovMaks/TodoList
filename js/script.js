@@ -69,7 +69,7 @@ const render = function () {
     todoDataToJson();
     disabledHeaderBtn();
 };
-// const removeLi = function () {                               // эта функция делает тоже самое что и в 59 строке
+// const removeLi = function () {                               
 //     const removeBtn = document.querySelectorAll('.todo-remove');
 
 //     removeBtn.forEach((btn, i) => {
