@@ -14,7 +14,7 @@ const todoDataToJson = () => {
         todoDataJson = JSON.stringify(todoData);
         localStorage.setItem('value', todoDataJson);
     } else if (todoData.length === 0) {
-        localStorage.removeItem('value');
+        localStorage.setItem('value', '[]');
     }
 };
 
@@ -28,8 +28,9 @@ const localStorageToJs = function () {
         todoData = todoDataJs;
     }
 };
-todoDataToJson();
+
 localStorageToJs();
+todoDataToJson();
 
 const render = function () {
 
